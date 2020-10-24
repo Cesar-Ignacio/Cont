@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1603505388 source:c:\users\usuario\downloads\codigos\gestioncontrol\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<ctime>
+	"Clases.h"
+	"Prototipos.h"
+	"Funciones.h"
+
+1603503961 c:\users\usuario\downloads\codigos\gestioncontrol\clases.h
+
+1603504780 c:\users\usuario\downloads\codigos\gestioncontrol\prototipos.h
+
+1603505465 c:\users\usuario\downloads\codigos\gestioncontrol\funciones.h
+
