@@ -45,6 +45,14 @@ int main()
         {
          NuevoControl();
         }
+        if(opc==2)
+        {
+         BajaDeControl();
+        }
+        if(opc==3)
+        {
+          BuscarControl();
+        }
         if(opc==4)
         {
           ListarControles();
