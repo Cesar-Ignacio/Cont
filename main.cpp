@@ -57,6 +57,10 @@ int main()
         {
           ListarControles();
         }
+        if(opc==5)
+        {
+          ModificarControl();
+        }
         if(opc==0)
         {
 

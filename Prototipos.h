@@ -6,6 +6,7 @@ void NuevoControl(void);
 void ListarControles(void);
 void BajaDeControl(void);
 void BuscarControl(void);
+void ModificarControl(void);
 
 ///FUNCONES AYUDA
 

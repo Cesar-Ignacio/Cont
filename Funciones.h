@@ -92,7 +92,54 @@ void ListarControles()
 
 }
 
+void ModificarControl()
+{
 
+    CONTROL objM;
+
+    char posicion[20],codfigo[20];
+    int opc=0, stock=0,UBR=0;
+
+    cout<<" MODIFICAR CONTROL "<<endl;
+    fflush(stdin);
+    cout<<" CODIGO:";
+    cin.getline(codfigo,20);
+
+    UBR=UbicacionDeRegistro(codfigo);
+    if(UBR!=-1)
+    {
+    objM.LEER(UBR);
+    objM.Mostrar();
+    cout<<"MODIFICAR : 1= POSICION , 2= STOCK:";
+    cin>>opc;
+
+    if(opc==1)
+    {
+        fflush(stdin);
+        cout<<"POSICION:";
+        cin.getline(posicion,20);
+
+        objM.setposicion(posicion);
+    }
+    else if(opc==2)
+    {
+
+        cout<<"STOCK:";
+        cin>>stock;
+        objM.setestock(stock);
+
+    }
+        objM.ACTUALIZAR(UBR);
+
+    }
+    else
+    {
+     cout<<"NO SE ENCONTRO EL REG"<<endl;
+    }
+
+  system("pause>null");
+  system("cls");
+}
 
 ///FUNCIONES AYUDA
 
