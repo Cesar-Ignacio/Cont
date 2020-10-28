@@ -11,6 +11,7 @@ using namespace std;
 
 
 const char *ARCHIVO_CONTROL={"Controles.dat"};
+const char *ARCHIVO_BKP_COMTROL={"Controles.bkp"};
 
 #include "Clases.h"
 #include "Prototipos.h"
