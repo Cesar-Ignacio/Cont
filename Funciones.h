@@ -141,6 +141,32 @@ void ModificarControl()
   system("cls");
 }
 
+void Faltantes()
+{
+    CONTROL objC;
+    cout<<"CONTROLES FALTANTES"<<endl;
+
+    int CRG=ContarRegistroDeArchivo(ARCHIVO_CONTROL,sizeof(CONTROL));
+
+    for(int x=0;x<CRG;x++)
+    {
+        objC.LEER(x);
+        if(objC.getestado()==1)
+        {
+
+            if(objC.getstock()==0)
+            {
+              objC.Mostrar();
+            }
+        }
+
+    }
+
+    system("pause>null");
+    system("cls");
+
+}
+
 ///FUNCIONES AYUDA
 
 int ContarRegistroDeArchivo(const char *Archivo,int tamnio)

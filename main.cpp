@@ -62,6 +62,10 @@ int main()
         {
           ModificarControl();
         }
+        if(opc==7)
+        {
+            Faltantes();
+        }
         if(opc==0)
         {
 
