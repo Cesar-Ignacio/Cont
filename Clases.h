@@ -6,6 +6,8 @@ class CONTROL
 private:
 
     char codigo[20];
+    char marca[15][20];
+    int cmarcasD;
     char posicion[10];
     int stock;
     int estado;
@@ -34,7 +36,8 @@ public:
        return 0;
     }
 
-
+    void CargraMarcas(void);
+    void MostrarMarcas(void);
     void Cargar(void);
     void Mostrar(void);
     void ALTA(void);
@@ -44,8 +47,46 @@ public:
 };
 
 
+void CONTROL::CargraMarcas()
+{
+    int y=1, x=0,cnom=0,opc=0;
+
+    while(y)
+    {
+        fflush(stdin);
+        cout<<"Palabra:";
+        cin.getline(marca[x],20);
+
+        cout<<"Agregar nombre 1=si , 0=no:";
+        cin>>opc;
+        system("cls");
+        if(opc==0)
+        {
+            y=0;
+        }
+        x++;
+
+    }
+
+     cmarcasD=x;
+}
+
+void CONTROL::MostrarMarcas()
+{
+      cout<<"MARCAS"<<endl;
+cout<<"***************"<<endl;
+     for(int x=0;x<cmarcasD;x++)
+     {
+         cout<<marca[x]<<endl;
+
+     }
+cout<<"***************"<<endl;
+}
+
 void CONTROL::Cargar()
 {
+    fflush(stdin);
+    CargraMarcas();
     fflush(stdin);
     cout<<"INGRESE CODIGO:";
     cin.getline(codigo,20);
@@ -60,7 +101,9 @@ void CONTROL::Mostrar()
 {
     if(estado==1)
     {
+        MostrarMarcas();
         cout<<"CODIGO DE CONTROL:"<<codigo<<endl;
+        cout<<"MARCAS ACEPTADAS:"<<cmarcasD<<endl;
         cout<<"POSICION:"<<posicion<<endl;
         cout<<"STOCK:"<<stock<<endl;
         cout<<"*************"<<endl;
@@ -73,7 +116,7 @@ void CONTROL::ALTA()
     Cargar();
 
     FILE *p;
-    p=fopen(ARCHIVO_CONTROL,"ab");
+    p=fopen(ARCHIVO_CONTROL,"wb");
     if(p==NULL)
     {
         exit(1);

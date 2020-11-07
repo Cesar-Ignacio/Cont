@@ -22,11 +22,12 @@ int main()
 {
     CONTROL objC;
 
+
     int opc=0;
 
     while(1)
     {
-        
+
         cout<<"MENU"<<endl;
         cout<<"**************"<<endl;
         cout<<"1:-NUEVO CONTROL"<<endl;
@@ -68,7 +69,7 @@ int main()
         }
         if(opc==0)
         {
-            
+
             return 0;
         }
 
@@ -78,6 +79,6 @@ int main()
 
 
 
-    system("pause>null");
+    system("pause");
     return 0;
 }

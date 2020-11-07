@@ -2,42 +2,31 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-<<<<<<< HEAD
-	<File name="Clases.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Funciones.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="858" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="4" />
-		</Folding>
-	</File>
-	<File name="Funciones.h" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2613" topLine="2" />
-		</Cursor>
-		<Folding>
-			<Collapse line="4" />
-			<Collapse line="15" />
-			<Collapse line="46" />
-			<Collapse line="78" />
-			<Collapse line="95" />
-			<Collapse line="174" />
-			<Collapse line="192" />
-		</Folding>
-	</File>
-	<File name="Prototipos.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="238" topLine="0" />
+			<Cursor1 position="2896" topLine="147" />
 		</Cursor>
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1325" topLine="42" />
-=======
-	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1004" topLine="0" />
->>>>>>> b0f46490d65c0e05c09b1695ed20c7c09789ea43
+			<Cursor1 position="1418" topLine="64" />
 		</Cursor>
+	</File>
+	<File name="Prototipos.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Clases.h" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1400" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="86" />
+			<Collapse line="100" />
+			<Collapse line="114" />
+			<Collapse line="131" />
+			<Collapse line="149" />
+		</Folding>
 	</File>
 </CodeBlocks_layout_file>
