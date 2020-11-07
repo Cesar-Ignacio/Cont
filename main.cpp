@@ -26,7 +26,7 @@ int main()
 
     while(1)
     {
-
+        
         cout<<"MENU"<<endl;
         cout<<"**************"<<endl;
         cout<<"1:-NUEVO CONTROL"<<endl;
@@ -68,7 +68,7 @@ int main()
         }
         if(opc==0)
         {
-
+            
             return 0;
         }
 

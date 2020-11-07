@@ -143,6 +143,7 @@ void ModificarControl()
 
 void Faltantes()
 {
+<<<<<<< HEAD
 
     CONTROL objc;
 
@@ -161,12 +162,33 @@ void Faltantes()
                 objc.Mostrar();
             }
 
+=======
+    CONTROL objC;
+    cout<<"CONTROLES FALTANTES"<<endl;
+
+    int CRG=ContarRegistroDeArchivo(ARCHIVO_CONTROL,sizeof(CONTROL));
+
+    for(int x=0;x<CRG;x++)
+    {
+        objC.LEER(x);
+        if(objC.getestado()==1)
+        {
+
+            if(objC.getstock()==0)
+            {
+              objC.Mostrar();
+            }
+>>>>>>> b0f46490d65c0e05c09b1695ed20c7c09789ea43
         }
 
     }
 
     system("pause>null");
     system("cls");
+<<<<<<< HEAD
+=======
+
+>>>>>>> b0f46490d65c0e05c09b1695ed20c7c09789ea43
 }
 
 ///FUNCIONES AYUDA
