@@ -35,7 +35,7 @@ int main()
         cout<<"3:-BUSCAR CONGTROL"<<endl;
         cout<<"4:-LISTAR CONTROLES"<<endl;
         cout<<"5:-MODIFICAR CONTROL"<<endl;
-        cout<<"6:-AGREGAR"<<endl;
+        cout<<"6:-AGREGAR"<<endl;///es para agregar a stock mas controles, el control debe existir.
         cout<<"7:-FALTANTES"<<endl;
         cout<<"8:-BACKUP"<<endl;
         cout<<"0:-SALIR"<<endl;
@@ -66,6 +66,10 @@ int main()
         if(opc==7)
         {
             Faltantes();
+        }
+        if(opc==8)
+        {
+            Backup();
         }
         if(opc==0)
         {

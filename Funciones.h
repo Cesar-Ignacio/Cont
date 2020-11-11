@@ -171,6 +171,76 @@ void Faltantes()
 
 }
 
+void RealizarBackup()
+{
+
+    CONTROL obj;
+
+    FILE *bp;
+
+    int cantreg=ContarRegistroDeArchivo(ARCHIVO_CONTROL,sizeof (CONTROL));
+
+    bp=fopen(ARCHIVO_BKP_COMTROL,"wb");
+    if(bp==NULL)
+    {
+        exit(1);
+    }
+
+    for(int x=0;x<cantreg;x++)
+    {
+        obj.LEER(x);
+
+        fwrite(&obj,sizeof(CONTROL),1,bp);
+
+    }
+
+
+    fclose(bp);
+
+
+    cout<<"SALIO TODO BIEN"<<endl;
+
+    system("pause>null");
+    system("cls");
+}
+
+void Backup()
+{
+
+  int opc=1;
+
+
+   while(opc!=0)
+   { cout<<" COPIA DE SEGURIDOD"<<endl;
+    cout<<"MENU"<<endl;
+    cout<<"*****************"<<endl;
+    cout<<"1. REALIZAR BACKUP"<<endl;
+    cout<<"2. RESTAURAR BACKUP"<<endl;
+    cout<<"0. SALIR"<<endl;
+    cout<<"*****************"<<endl;
+    cout<<"OPCION:";
+    cin>>opc;
+
+    system("cls");
+    if(opc==1)
+    {
+      RealizarBackup();
+    }
+    if(opc==2)
+    {
+
+    }
+
+
+   }
+
+    cout<<"VOLVIENDO AL MUNU PRINCIPAL"<<endl;
+
+    system("pause>null");
+    system("cls");
+
+}
+
 ///FUNCIONES AYUDA
 
 int ContarRegistroDeArchivo(const char *Archivo,int tamnio)
