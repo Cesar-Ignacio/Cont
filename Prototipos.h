@@ -9,6 +9,7 @@ void BuscarControl(void);
 void ModificarControl(void);
 void Faltantes(void);
 void RealizarBackup();
+void RestaurarBackup();
 void Backup(void);
 ///FUNCONES AYUDA
 

@@ -204,6 +204,40 @@ void RealizarBackup()
     system("cls");
 }
 
+void RestaurarBackup()
+{
+  CONTROL obj;
+
+  FILE *p;
+  FILE *bk;
+  p=fopen(ARCHIVO_CONTROL,"wb");
+  if(p==NULL)
+  {
+      exit(1);
+  }
+
+  bk=fopen(ARCHIVO_BKP_COMTROL,"rb");
+  if(bk==NULL)
+  {
+      exit(1);
+  }
+
+  while(fread(&obj,sizeof(CONTROL),1,bk))
+  {
+      fwrite(&obj,sizeof(CONTROL),1,p);
+  }
+
+  fclose(bk);
+  fclose(p);
+
+  cout<<"RESTAURACIÓN EXITOSA"<<endl;
+
+  system("pause>null");
+  system("cls");
+
+
+}
+
 void Backup()
 {
 
@@ -228,7 +262,7 @@ void Backup()
     }
     if(opc==2)
     {
-
+      RestaurarBackup();
     }
 
 
