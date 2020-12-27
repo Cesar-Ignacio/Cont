@@ -33,8 +33,13 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Clases.h" />
+		<Unit filename="Cuadros.h" />
 		<Unit filename="Funciones.h" />
+		<Unit filename="Letras.h" />
+		<Unit filename="Marcos.h" />
 		<Unit filename="Prototipos.h" />
+		<Unit filename="color.h" />
+		<Unit filename="gotoxy.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

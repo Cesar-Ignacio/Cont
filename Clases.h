@@ -116,7 +116,7 @@ void CONTROL::ALTA()
     Cargar();
 
     FILE *p;
-    p=fopen(ARCHIVO_CONTROL,"wb");
+    p=fopen(ARCHIVO_CONTROL,"ab");
     if(p==NULL)
     {
         exit(1);

@@ -50,20 +50,35 @@
 
 1604715834 c:\users\usuario\downloads\cont\funciones.h
 
-1605061579 source:c:\users\usuario\downloads\codigos\cont\main.cpp
+1609111705 source:c:\users\usuario\downloads\codigos\cont\main.cpp
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
 	<conio.h>
 	<ctime>
+	"gotoxy.h"
+	"color.h"
+	"Cuadros.h"
+	"Letras.h"
 	"Clases.h"
 	"Prototipos.h"
 	"Funciones.h"
+	"Marcos.h"
 
-1604784482 c:\users\usuario\downloads\codigos\cont\clases.h
+1606360672 c:\users\usuario\downloads\codigos\cont\clases.h
 
 1605322540 c:\users\usuario\downloads\codigos\cont\prototipos.h
 
-1605323258 c:\users\usuario\downloads\codigos\cont\funciones.h
+1609110068 c:\users\usuario\downloads\codigos\cont\funciones.h
+
+1609109044 c:\users\usuario\downloads\codigos\cont\gotoxy.h
+
+1609109261 c:\users\usuario\downloads\codigos\cont\color.h
+
+1609109955 c:\users\usuario\downloads\codigos\cont\cuadros.h
+
+1609111849 c:\users\usuario\downloads\codigos\cont\marcos.h
+
+1609111018 c:\users\usuario\downloads\codigos\cont\letras.h
 

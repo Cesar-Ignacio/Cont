@@ -275,6 +275,9 @@ void Backup()
 
 }
 
+
+
+
 ///FUNCIONES AYUDA
 
 int ContarRegistroDeArchivo(const char *Archivo,int tamnio)
